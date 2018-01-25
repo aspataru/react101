@@ -1,0 +1,116 @@
+body {
+  font-family: sans-serif;
+  padding: 30px;
+}
+ 
+ 
+/*
+ * Tweet wrapper
+ */
+.Tweets {
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+}
+ 
+/*
+ * Single tweet
+ */
+.Tweet {
+  border-bottom: 1px solid #e1e8ed;
+  padding: 9px 12px;
+}
+ 
+.Tweet:hover {
+  background: #f5f8fa;
+}
+   
+.Tweet small { /* handle */
+  color: #bbb;
+  font-weight: lighter;
+}
+ 
+/*
+ * Write a new tweet
+ */
+.Tweetbox {
+  background: #e5f1f9;
+  padding: 10px 12px;
+   
+}
+ 
+.Tweetbox__actions {
+  text-align:right;
+  margin-top: 8px;
+}
+ 
+.Tweetbox__counter {
+  color: #8899a6;
+  margin-right: 10px;
+}
+ 
+ 
+textarea {
+  font-family: sans-serif;
+  box-sizing:border-box;
+  width: 100%;
+  padding: 8px 10px;
+  border: #bfdcf1 1px solid;
+  border-radius: 2px;
+  resize:none;
+   
+}
+ 
+textarea:focus{
+  border-color:#99c8e9;
+}
+ 
+input[type=submit] {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+   
+  padding: 9px 16px 8px 17px;
+   
+  border:1px solid transparent;
+  border-radius: 4px;
+  background-color: rgba(0, 118, 202, 0.8);
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset;
+   
+}
+ 
+input[type=submit][disabled] {
+  background-color:#0076ca;
+  opacity: 0.2;
+}
+ 
+input[type=submit]:hover {
+  background-color:#0076ca;
+  background-image:linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+}
+ 
+/* This is to make the styles work with and without a tweet wrapper */
+.Tweetbox {
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+}
+ 
+.Tweets .Tweetbox {
+  border-width:0;
+  border-radius: 0;
+}
+ 
+.Tweet:last-child {
+  border-bottom: none;
+}
+ 
+.Tweet {
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+}
+ 
+.Tweets .Tweet {
+  border-top-width:0;
+  border-left-width:0;
+  border-right-width:0;
+  border-radius: 0;
+}
